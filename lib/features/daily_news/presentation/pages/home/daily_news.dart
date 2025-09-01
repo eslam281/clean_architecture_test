@@ -1,3 +1,4 @@
+import 'package:cached_network_image/cached_network_image.dart';
 import 'package:cleanarchitecture/features/daily_news/presentation/bloc/article/remote/remote_article_bloc.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
@@ -31,10 +32,10 @@ class DailyNews extends StatelessWidget {
               final article = state.articles![index];
               return ListTile(
                 leading: article.urlToImage != null
-                    ? Image.network(
+                    ? CachedNetworkImage(imageUrl:
                   article.urlToImage!,
-                  width: 60,
-                  fit: BoxFit.cover,
+                  width: 150,
+                  fit: BoxFit.fill,
                 )
                     : const Icon(Icons.article),
                 title: Text(
