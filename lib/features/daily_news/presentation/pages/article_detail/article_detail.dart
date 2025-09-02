@@ -29,6 +29,7 @@ class ArticleDetailView extends StatelessWidget {
             child: const Icon(Icons.arrow_back),
           ),
       ),
+      title: const Text("Saved Articles",style: TextStyle(color: Colors.black),),
     );
   }
 

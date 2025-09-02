@@ -1,6 +1,7 @@
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:cleanarchitecture/features/daily_news/presentation/bloc/article/remote/remote_article_bloc.dart';
 import 'package:cleanarchitecture/features/daily_news/presentation/pages/article_detail/article_detail.dart';
+import 'package:cleanarchitecture/features/daily_news/presentation/pages/saved_article/saved_article.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
@@ -10,14 +11,24 @@ class DailyNews extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return  Scaffold(
-      appBar:_buildAppbar() ,
+      appBar:_buildAppbar(context) ,
       body: _buildBody(),
     );
   }
-  _buildAppbar(){
+  _buildAppbar(BuildContext context){
     return AppBar(
       title: const Text("Daily News",style: TextStyle(color: Colors.black)),
       centerTitle: true,
+      actions: [
+        GestureDetector(
+          onTap: () {
+            Navigator.push(context, MaterialPageRoute(builder:
+            (context) => SavedArticles(),));
+          },
+          child: Padding(padding: EdgeInsets.symmetric(horizontal: 20),
+          child: Icon(Icons.bookmark),)
+        )
+      ],
     );
   }
   _buildBody(){
