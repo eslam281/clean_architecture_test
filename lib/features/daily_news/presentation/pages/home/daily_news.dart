@@ -1,5 +1,6 @@
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:cleanarchitecture/features/daily_news/presentation/bloc/article/remote/remote_article_bloc.dart';
+import 'package:cleanarchitecture/features/daily_news/presentation/pages/article_detail/article_detail.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
@@ -48,8 +49,8 @@ class DailyNews extends StatelessWidget {
                   overflow: TextOverflow.ellipsis,
                 ),
                 onTap: () {
-                  // ممكن تفتح صفحة تفاصيل أو WebView هنا
-                  // Navigator.push(...)
+                  Navigator.push(context, MaterialPageRoute(
+                    builder: (context) => ArticleDetailView(article: article,),));
                 },
               );
             },
