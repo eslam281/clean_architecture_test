@@ -41,7 +41,7 @@ flutter pub get
 flutter run
 ```
 
-##📌 Notes
+## 📌 Notes
 This project is for educational purposes only (not production).
 My main goal is to demonstrate clean code + clean architecture practices.
 
