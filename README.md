@@ -52,3 +52,6 @@ flutter run
 This project is for educational purposes only (not production).
 My main goal is to demonstrate clean code + clean architecture practices.
 
+## 📄 License
+This project is licensed under the MIT License - see the [LICENSE](./LICENSE) file for details.
+
