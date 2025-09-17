@@ -10,6 +10,13 @@ It demonstrates:
 - REST API integration with `retrofit` + `dio`.
 
 ---
+## ✨ Features
+- Fetch latest daily news from REST API
+- Save news articles locally using Floor
+- Dark/Light theme support
+- Offline mode with cached data
+- Clean Architecture (Data, Domain, Presentation)
+
 
 ## 🗂️ Project Structure
 ```
