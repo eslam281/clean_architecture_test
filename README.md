@@ -12,7 +12,7 @@ It demonstrates:
 ---
 
 ## 🗂️ Project Structure
-
+```
 lib/
 ├─ config/ # Theme, app config
 ├─ core/ # Constants, resources, usecases
@@ -21,10 +21,7 @@ lib/
 │ ├─ data/ # Models, repository, sources
 │ ├─ domain/ # Entities, repository, usecases
 │ └─ presentation/ # Bloc, pages, widgets
-
-yaml
-Copy code
-
+```
 ---
 
 ## ⚙️ Tech Stack
@@ -42,9 +39,8 @@ Clone the repo and run:
 ```bash
 flutter pub get
 flutter run
+```
 📌 Notes
 This project is for educational purposes only (not production).
 My main goal is to demonstrate clean code + clean architecture practices.
 
-yaml
-Copy code
