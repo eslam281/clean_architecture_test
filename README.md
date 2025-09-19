@@ -13,7 +13,6 @@ It demonstrates:
 ## ✨ Features
 - Fetch the latest daily news from the REST API
 - Save news articles locally using Floor
-- Dark/Light theme support
 - Offline mode with cached data
 - Clean Architecture (Data, Domain, Presentation)
 
