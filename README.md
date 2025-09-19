@@ -11,7 +11,7 @@ It demonstrates:
 
 ---
 ## ✨ Features
-- Fetch latest daily news from REST API
+- Fetch the latest daily news from the REST API
 - Save news articles locally using Floor
 - Dark/Light theme support
 - Offline mode with cached data
